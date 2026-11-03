@@ -29,7 +29,10 @@ Room::Room(int x, int y) {
  
 }
 Room::~Room() {
-
+    for(int outerCounter = 0; outerCounter < height; outerCounter++) {
+        delete[] this->map[outerCounter];
+    }
+    delete[] this->map;
 }
 void Room::draw() {
     for(int outerCounter = 0; outerCounter < height; outerCounter++) {

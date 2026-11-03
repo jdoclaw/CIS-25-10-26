@@ -9,9 +9,15 @@ int main() {
     bool isRunning = true;
 
     while (isRunning) {
+        // draw
+        room.draw();
+
         // take user input
-        
-        // draw 
+        char key;
+        cout << "Enter a move (q to quit): ";
+        if (!(cin >> key) || key == 'q') {
+            isRunning = false;
+        }
 
         // do game things
     }
