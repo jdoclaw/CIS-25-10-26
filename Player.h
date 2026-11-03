@@ -5,8 +5,8 @@ class Room;
 
 class Player {
     private:
-        int x;
-        int y;
+        int x = 0;
+        int y = 0;
 
     public:
         bool move(char key, Room * room);
